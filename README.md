@@ -19,13 +19,12 @@ The SDK for React Native is available as an npm package:
 * `cd ios`
 
 
-* `&& pod install`
+* `pod install`
 * `react-native run-ios --device` or `react-native run-android`
 
 ## if using XCode 12.5 you may want to add the fol. code to your Podfile
 
-* `post_install do |installer|
-  ## Fix for XCode 12.5
+post_install do |installer|
   find_and_replace("../node_modules/react-native/React/CxxBridge/RCTCxxBridge.mm",
   "_initializeModules:(NSArray<id<RCTBridgeModule>> *)modules", "_initializeModules:(NSArray<Class> *)modules")
   find_and_replace("../node_modules/react-native/ReactCommon/turbomodule/core/platform/ios/RCTTurboModuleManager.mm",
@@ -43,7 +42,7 @@ def find_and_replace(dir, findstr, replacestr)
       end
   end
   Dir[dir + '*/'].each(&method(:find_and_replace))
-end`
+end
 
 ## Requirements
 
