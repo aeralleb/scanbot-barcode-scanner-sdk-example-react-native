@@ -24,7 +24,8 @@ The SDK for React Native is available as an npm package:
 
 ## if using XCode 12.5 you may want to add the fol. code to your Podfile
 
-`post_install do |installer|
+```
+post_install do |installer|
   find_and_replace("../node_modules/react-native/React/CxxBridge/RCTCxxBridge.mm",
   "_initializeModules:(NSArray<id<RCTBridgeModule>> *)modules", "_initializeModules:(NSArray<Class> *)modules")
   find_and_replace("../node_modules/react-native/ReactCommon/turbomodule/core/platform/ios/RCTTurboModuleManager.mm",
@@ -42,8 +43,8 @@ def find_and_replace(dir, findstr, replacestr)
       end
   end
   Dir[dir + '*/'].each(&method(:find_and_replace))
-end`
-
+end
+```
 ## Requirements
 
 ### Built using
