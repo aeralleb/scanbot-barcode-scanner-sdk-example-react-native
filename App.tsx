@@ -45,7 +45,23 @@ import BarcodeTypes from "./src/model/BarcodeTypes";
  * Please submit the trial license form (https://scanbot.io/sdk/trial.html) on our website by using
  * the app identifier "io.scanbot.example.sdk.barcode.reactnative" of this example app.
  */
-const LICENSE_KEY = "";
+
+ const LICENSE_KEY  =
+  "n651xxh1vUjFUMI/o4rg31XqNsEJb7" +
+  "pvuMBDfumqj//pRQZT7xMQVWdOwKFV" +
+  "w6xaFPF90IzhkV1eYwPPSuFwMq9gFH" +
+  "RQXIjGtQstzs06wC04DHCaqKS2nnHA" +
+  "5VhAxwHEhwOnsecDThlu0LYpwm7Hq0" +
+  "hLPKxi5/ImDdlQh5+eNFS2HmLgjXeA" +
+  "NU1Xxz1OWkBZZHiV6H77BsdGLlwTAx" +
+  "u7A4sHJ/3nKbQ9o3vR+tEM29MBpJX/" +
+  "3n45NmMWU6a4/pFDwy2NUjMUtA+dUf" +
+  "WheO0lz51J5dbM8jPymP8Nkljbp7Ke" +
+  "7WY4ao/htjhWGpUGHdmsjA2jpAM5mO" +
+  "Qv8NYWKm4a5Q==\nU2NhbmJvdFNESw" +
+  "pjb20uc2NhbmRpdC5CYXJjb2RlQ2Fw" +
+  "dHVyZVNpbXBsZVNhbXBsZS5MU0NPCj" +
+  "E2Mjc1MTY3OTkKNTEyCjM=\n";
 
 const ListSource = [
   {
